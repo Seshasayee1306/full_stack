@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Apply a lighter background image to all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a white overlay to lighten the background */
+    color: #333; /* Set text color to a darker shade for readability */
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+/* Darken the header and footer for better visibility */
+header, footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Make sure the footer stays at the bottom */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Footer height */
+}
+
+/* Lighten the background of the main content area */
+main {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Darker headings */
+h1, h2 {
+    color: #111; /* Darker shade for headings */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

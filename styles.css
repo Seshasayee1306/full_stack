@@ -1,45 +1,19 @@
 /* styles.css */
 
-/* Apply a lighter background image to all pages */
+/* General body styling */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file name */
+    font-family: Arial, sans-serif; /* Default font for the entire page */
+    background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.7); /* Add a white overlay to lighten the background */
-    color: #333; /* Set text color to a darker shade for readability */
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 60px; /* Space for the footer */
-}
-
-/* Darken the header and footer for better visibility */
-header, footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-}
-
-/* Make sure the footer stays at the bottom */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /* Footer height */
-}
-
-/* Lighten the background of the main content area */
-main {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 8px;
+    padding-bottom: 60px;
 }
 
 /* Darker headings */
@@ -47,11 +21,12 @@ h1, h2 {
     color: #111; /* Darker shade for headings */
 }
 
-/* Table styling */
+/* Table-specific font styling */
 table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace; /* Different font for table text */
 }
 
 th, td {
@@ -78,8 +53,62 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
 }
 
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Footer height */
+}
+
+/* Floating animation for the image */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+img.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Link box styling */
+.link-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.link-box a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-box a:hover {
+    text-decoration: underline;
+}
+
+/* Content bottom margin adjustment */
+.content {
+    padding-bottom: 100px; /* Adjust this value to move the table higher */
 }

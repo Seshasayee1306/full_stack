@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gold</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('growth-gold-bar-financial-investment-600nw-2294454523.webp'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .chart-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chart-container canvas {
+            max-width: 100%;
+        }
+
+        .investment-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .investment-option {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .investment-option:hover {
+            transform: scale(1.05);
+        }
+
+        .investment-option h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .investment-option button {
+            background-color: #FFD700;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .investment-option button:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Invest in Digital Gold</h1>
+        <p>Track the live price of gold and make smart investments.</p>
+    </div>
+
+    <!-- Gold Price Chart -->
+    <div class="chart-container">
+        <canvas id="goldPriceChart"></canvas>
+    </div>
+
+    <!-- Investment Options -->
+    <div class="investment-options">
+        <div class="investment-option">
+            <h3>Start with Small</h3>
+            <button onclick="startInvestment()">Invest Now</button>
+        </div>
+        <div class="investment-option">
+            <h3>Gold SIP</h3>
+            <button onclick="startInvestment()">Start SIP</button>
+        </div>
+    </div>
+</div>
+
+<!-- Script to include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Gold price chart
+    const ctx = document.getElementById('goldPriceChart').getContext('2d');
+    const goldPriceChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+            datasets: [{
+                label: 'Gold Price (in USD)',
+                data: [1800, 1850, 1820, 1880, 1900, 1950, 2000, 2100, 2200, 2150], // Example gold price data
+                borderColor: 'gold',
+                backgroundColor: 'rgba(255, 223, 0, 0.2)', // Light gold color
+                borderWidth: 2,
+                pointBackgroundColor: 'gold',
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Month'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Price (in USD)'
+                    }
+                }
+            }
+        }
+    });
+
+    // Dummy function for Invest Now button
+    function startInvestment() {
+        alert("You can start investing in digital gold now!");
+    }
+</script>
+
+</body>
+</html>

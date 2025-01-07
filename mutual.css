@@ -1,0 +1,169 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    background-image: url('temp.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(26, 35, 126, 0.8); /* Semi-transparent background */
+    padding: 20px 0;
+    color: white;
+    border-bottom: 2px solid #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Intro section */
+.intro {
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency for background */
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Fund cards section */
+.funds {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.fund-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fund-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.fund-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.fund-card p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.fund-card button {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fund-card button:hover {
+    background-color: #3f51b5;
+}
+
+/* Performance chart */
+.performance {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 0;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.performance h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.chart {
+    margin-top: 30px;
+}
+
+.chart-item {
+    margin-bottom: 15px;
+}
+
+.chart-item h4 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.chart-bar {
+    height: 10px;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #1a237e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}

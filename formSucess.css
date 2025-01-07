@@ -1,0 +1,113 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('hd.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 40vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    animation: glowing-border 1s infinite alternate;
+}
+
+@keyframes glowing-border {
+    from {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(0, 0, 255, 1);
+    }
+}
+
+.header-quote {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Main Styles */
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Success Message Styles */
+.success-message {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.success-message h2 {
+    font-size: 2rem;
+    color: #00c8ff; /* Light blue for emphasis */
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

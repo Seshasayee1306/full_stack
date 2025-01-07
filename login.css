@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000033;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000033;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0099ff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #0099ff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #33ccff;
+}
+
+header .header-content h1 {
+    color: #0099ff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .header-quote {
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Main Styles */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#login {
+    background-color: #00003a;
+    border: 2px solid #0099ff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.5);
+    text-align: center;
+}
+
+#login h2 {
+    color: #0099ff;
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    display: block;
+    color: #33ccff;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333366;
+    color: #ffffff;
+}
+
+#login-form button[type="submit"] {
+    background-color: #0099ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #33ccff;
+}
+
+/* Footer */
+footer {
+    background-color: #000033;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #0099ff;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DEMAT  Direct</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Power.html">Home</a></li>
+                <li><a href="Power.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>DEMAT DIRECT</h1>
+            <p class="header-quote">YOUR FIRST STEP TO FINANCIAL MANAGEMENT</p>
+        </div>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Log In</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anand Balaji S N</p>
+    </footer>
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = "Power.html"; // Redirect to the home page (replace with actual URL if needed)
+        });
+    </script>
+    
+</body>
+</html>

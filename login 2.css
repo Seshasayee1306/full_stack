@@ -1,0 +1,108 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Ensure the background of the login page matches the main page */
+body {
+    background-image: url('images/1305369.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    position: center;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* Login Section Styles */
+#login {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Dark background for contrast */
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 400px; /* Restricts width */
+    box-shadow: 0 0 25px rgba(0, 0, 139, 0.8); /* Dark blue glowing shadow */
+    color: #fff; /* White text */
+    text-align: center;
+}
+
+#login h2 {
+    font-size: 2.5rem;
+    color: #fff; /* White color */
+    margin-bottom: 1rem;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    animation: glowing-border 1s infinite alternate;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background: #1d1c1c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d1c1c;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 1);
+}
+
+/* Footer Styles */
+footer {
+    padding: 2rem;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
